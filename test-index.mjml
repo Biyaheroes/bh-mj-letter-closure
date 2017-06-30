@@ -1,9 +1,7 @@
 <mjml>
 	<mj-body>
 		<mj-container>
-			<mj-letter-closure
-				content="This is a content"
-				/>
+			<mj-letter-closure content="This is a content" />
 		</mj-container>
 	</mj-body>
 </mjml>

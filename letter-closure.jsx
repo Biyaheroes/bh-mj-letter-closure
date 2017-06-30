@@ -1,7 +1,7 @@
 "use strict";
 
 /*;
-  @module-license:
+	@module-license:
 		The MIT License (MIT)
 		@mit-license
 
@@ -25,39 +25,40 @@
 		LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 		OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 		SOFTWARE.
-  @end-module-license
+	@end-module-license
 
-  @module-configuration:
-	{
-	  "package": "letter-closure",
-	  "path": "letter-closure/letter-closure.jsx",
-	  "file": "letter-closure.jsx",
-	  "module": "letter-closure",
-	  "author": "Biyaheroes Developers",
-	  "contributors": [
-		"Robot Biyaheroes <robot@biyaheroes.com>",
-		"Vinse Vinalon <vinsevinalon@gmail.com>"
-	  ],
-	  "eMail": "developers@biyaheroes.com",
-	  "repository": "https://github.com/Biyaheroes/bh-mj-detail.git",
-	  "global": true
-	}
-  @end-module-configuration
+	@module-configuration:
+		{
+			"package": "letter-greeting",
+			"path": "letter-greeting/letter-greeting.jsx",
+			"file": "letter-greeting.jsx",
+			"module": "letter-greeting",
+			"author": "Biyaheroes Developers",
+			"contributors": [
+				"Robot Biyaheroes <robot@biyaheroes.com>",
+				"Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+			],
+			"eMail": "developers@biyaheroes.com",
+			"repository": "https://github.com/Biyaheroes/bh-mj-letter-greeting.git",
+			"global": true
+		}
+	@end-module-configuration
 
-  @module-documentation:
-	Biyaheroes MJML Letter Closure Component
-  @end-module-documentation
+	@module-documentation:
+		Biyaheroes MJML Letter Closure Component.
+	@end-module-documentation
 
-  @include:
-	{
-	  "MJMLElement": "mjml-core",
-	  "React": "react",
-	  "Component": "react.Component",
-	  "Column": "mjml-column",
-	  "Table": "mjml-table",
-	  "wichevr": "wichevr"
-	}
-  @end-include
+	@include:
+		{
+			"falzy": "falzy",
+			"MJMLElement": "mjml-core",
+			"React": "react",
+			"Component": "react.Component",
+			"Column": "mjml-column",
+			"Table": "mjml-table",
+			"wichevr": "wichevr"
+		}
+	@end-include
 */
 
 import { MJMLElement } from "mjml-core";
@@ -65,39 +66,41 @@ import React, { Component } from "react";
 import Column from "mjml-column";
 import Section from "mjml-section";
 import Text from "mjml-text";
-import wichevr from "wichevr";
+
 
 const tagName = "mj-letter-closure";
 
-const parentTag = ["mj-container"];
+const parentTag = [ "mj-container", "mj-section" ];
 
 const endingTag = false;
 
 const defaultMJMLDefinition = {
-	"content": "",
+	"content": ""
 };
 
 @MJMLElement
 class LetterClosure extends Component {
-	render() {
+	render( ){
 		const { mjAttribute } = this.props;
 
-		return (
-			<Section 
-				{ ...this.props }
-					padding="10px 0px 40px 0px"
+		let { content } = this.props;
 
+		return ( <Section
+					{ ...this.props }
+					padding="10px 0px 40px 0px"
 					>
-				<Column
-					>
-					<Text
-						padding="0px 30px 0px 30px"
-                  		font-size="15px"
-                  		letter-spacing="0.5px">
-						{ wichevr( mjAttribute( "content" ) ) }
-					</Text>
-				</Column>
-			</Section>);
+					<Column>
+							<Text
+								style={ {
+									"padding": "0px 30px 0px 30px",
+									"fontSize": "15px",
+									"letterSpacing": "0.5px",
+								} }
+							>
+									{ mjAttribute( 'content' ) } 
+							</Text>		
+					</Column>
+				</Section> );
 	}
 }
 

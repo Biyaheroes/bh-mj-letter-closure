@@ -1,19 +1,14 @@
 yarn add \
 babel-runtime \
-bh-mj-detail \
-doubt \
-filpos \
+falzy \
 jquery \
 mjml \
-mjml-section \
 mjml-column \
-mjml-text \
 mjml-core \
-nbyx \
-parseon \
-protype \
-sxty4 \
+mjml-table \
+mjml-text \
 react \
+wichevr \
 --save && \
 yarn add \
 babel-cli \
@@ -49,14 +44,9 @@ webpack-dev-server \
 yargs \
 --dev && \
 bower install \
-bh-mj-detail \
-doubt \
-filpos \
+falzy \
 jquery \
-nbyx \
-parseon \
-protype \
-sxty4 \
 react \
+wichevr \
 --force-latest \
 --save
