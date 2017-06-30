@@ -50,12 +50,12 @@
 
 	@include:
 		{
-			"falzy": "falzy",
 			"MJMLElement": "mjml-core",
 			"React": "react",
 			"Component": "react.Component",
 			"Column": "mjml-column",
-			"Table": "mjml-table",
+			"Section": "mjml-section",
+			"Text": "mjml-text",
 			"wichevr": "wichevr"
 		}
 	@end-include
@@ -67,6 +67,7 @@ import Column from "mjml-column";
 import Section from "mjml-section";
 import Text from "mjml-text";
 
+import wichevr from "wichevr";
 
 const tagName = "mj-letter-closure";
 
@@ -75,7 +76,10 @@ const parentTag = [ "mj-container", "mj-section" ];
 const endingTag = false;
 
 const defaultMJMLDefinition = {
-	"content": ""
+	"content": "",
+	"attributes": {
+		"paragraph": ""
+	}
 };
 
 @MJMLElement
@@ -83,12 +87,14 @@ class LetterClosure extends Component {
 	render( ){
 		const { mjAttribute } = this.props;
 
-		let { content } = this.props;
+		let { paragraph } = this.props;
+
+		paragraph = wichevr( paragraph, mjAttribute( "paragraph" ) );
 
 		return ( <Section
 					{ ...this.props }
 					padding="10px 0px 40px 0px"
-					>
+				>
 					<Column>
 							<Text
 								style={ {
@@ -97,8 +103,8 @@ class LetterClosure extends Component {
 									"letterSpacing": "0.5px",
 								} }
 							>
-									{ mjAttribute( 'content' ) } 
-							</Text>		
+								{ paragraph }
+							</Text>
 					</Column>
 				</Section> );
 	}

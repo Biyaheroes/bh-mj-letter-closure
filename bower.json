@@ -1,9 +1,14 @@
 {
   "name": "bh-mj-letter-closure",
+  "version": "0.0.0",
   "description": "Biyaheroes MJML Letter Closure Component",
-  "main": ".filter.js",
+  "main": "letter-closure.deploy.js",
+  "support": "letter-closure.support.js",
   "authors": [
-    "Biyaheroes Developers <developers@biyaheroes.com>"
+    "Biyaheroes Developers <developers@biyaheroes.com>",
+	"Robot Biyaheroes <robot@biyaheroes.com>",
+    "Vinse Vinalon <vinsevinalon@gmail.com>",
+	"Richeve S. Bebedor <richeve.bebedor@gmail.com>"
   ],
   "license": "MIT",
   "keywords": [
@@ -21,11 +26,5 @@
     "bower_components",
     "test",
     "tests"
-  ],
-  "dependencies": {
-    "falzy": "^0.20.0",
-    "jquery": "^3.2.1",
-    "react": "^15.6.1",
-    "wichevr": "^0.10.0"
-  }
+  ]
 }
