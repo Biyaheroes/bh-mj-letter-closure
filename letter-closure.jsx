@@ -29,17 +29,18 @@
 
 	@module-configuration:
 		{
-			"package": "letter-greeting",
-			"path": "letter-greeting/letter-greeting.jsx",
-			"file": "letter-greeting.jsx",
-			"module": "letter-greeting",
+			"package": "bh-mj-letter-closure",
+			"path": "bh-mj-letter-closure/letter-closure.jsx",
+			"file": "letter-closure.jsx",
+			"module": "letter-closure",
 			"author": "Biyaheroes Developers",
 			"contributors": [
 				"Robot Biyaheroes <robot@biyaheroes.com>",
-				"Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+				"Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+				"Vinse Vinalon <vinsevinalon@gmail.com>"
 			],
 			"eMail": "developers@biyaheroes.com",
-			"repository": "https://github.com/Biyaheroes/bh-mj-letter-greeting.git",
+			"repository": "https://github.com/Biyaheroes/bh-mj-letter-closure.git",
 			"global": true
 		}
 	@end-module-configuration
