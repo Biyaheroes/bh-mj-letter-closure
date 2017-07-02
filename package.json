@@ -42,7 +42,6 @@
   "homepage": "https://github.com/Biyaheroes/bh-mj-letter-closure#readme",
   "dependencies": {
     "babel-runtime": "^6.23.0",
-    "gulp": "^3.9.1",
     "jquery": "^3.2.1",
     "mjml": "^3.3.3",
     "mjml-column": "^3.3.3",
@@ -63,6 +62,7 @@
     "css-loader": "^0.28.4",
     "del": "^3.0.0",
     "graceful-fs": "^4.1.11",
+    "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
     "gulp-changed": "^3.1.0",
     "gulp-debug": "^3.1.0",
