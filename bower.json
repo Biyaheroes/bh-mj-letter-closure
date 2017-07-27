@@ -1,35 +1,30 @@
 {
-  "name": "bh-mj-letter-closure",
-  "version": "0.0.0",
-  "description": "Biyaheroes MJML Letter Closure Component",
-  "main": "letter-closure.deploy.js",
-  "support": "letter-closure.support.js",
-  "authors": [
-    "Biyaheroes Developers <developers@biyaheroes.com>",
-    "Robot Biyaheroes <robot@biyaheroes.com>",
-    "Vinse Vinalon <vinsevinalon@gmail.com>",
-    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
-  ],
-  "license": "MIT",
-  "keywords": [
-    "biyaheroes",
-    "mjml",
-    "letter",
-    "closure",
-    "component",
-    "bh-mj-letter-closure"
-  ],
-  "homepage": "https://github.com/Biyaheroes/bh-mj-letter-closure",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "jquery": "^3.2.1",
-    "react": "^15.6.1",
-    "wichevr": "^0.10.0"
-  }
+	"name": "bh-mj-letter-closure",
+	"version": "0.0.0",
+	"description": "Biyaheroes MJML Letter Closure Component",
+	"main": "letter-closure.deploy.js",
+	"support": "letter-closure.support.js",
+	"authors": [
+		"Biyaheroes Developers <developers@biyaheroes.com>",
+		"Robot Biyaheroes <robot@biyaheroes.com>",
+		"Vinse Vinalon <vinsevinalon@gmail.com>",
+		"Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+	],
+	"license": "MIT",
+	"keywords": [
+		"biyaheroes",
+		"mjml",
+		"letter",
+		"closure",
+		"component",
+		"bh-mj-letter-closure"
+	],
+	"homepage": "https://github.com/Biyaheroes/bh-mj-letter-closure",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	]
 }
